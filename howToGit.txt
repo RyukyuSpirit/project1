@@ -1,0 +1,27 @@
+How to GIT (from command prompt)
+---------------------------------
+
+****************************************
+Initial setup
+****************************************
+--Set up project directory on your computer--
+cd Documents            //change directory into the Documents directory
+mkdir {name}            //make directory with name of your choice, for me 'fotc'
+cd {name}		//change into directory you just made
+
+--First time, linking your directory (remote) to the online repo (origin)--
+git init			//prepares this directory to become a local git repo
+git remote add origin https://github.com/RyukyuSpirit/project1.git
+git pull origin master 		//This will copy files from our repo to your folder
+
+****************************************
+Common actions (from within your directory made above
+****************************************
+
+--Add an updated file to the online repository--
+git add {filename}				//specify file being added/updated
+git commit -m "description of changes made"     //summarize changes made
+git push -u origin master			//save to online repo (origin)
+
+--To pull down latest files/changes from the repository--
+git pull origin master 				//copies files from our repo to your folder
